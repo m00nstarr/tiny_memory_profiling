@@ -4,6 +4,8 @@ import torch.nn.functional as F
 from torch.nn import init
 from torch.profiler import profile, record_function, ProfilerActivity
 
+from cost_profiler import model_size, count_activation_size
+
 class hswish(nn.Module):
     def forward(self, x):
         out = x * F.relu6(x+3, inplace = True) /6
@@ -57,9 +59,7 @@ class Block(nn.Module):
             )
 
     def forward(self, x):
-        print(x.shape)
         out = self.nolinear1(self.bn1(self.conv1(x)))
-        print(out.shape)
         out = self.nolinear2(self.bn2(self.conv2(out)))
         out = self.bn3(self.conv3(out))
         if self.se != None:
@@ -175,113 +175,7 @@ class MobileNetV3_Small(nn.Module):
         out = self.hs3(self.bn3(self.linear3(out)))
         out = self.linear4(out)
         return out
+ 
 
-# # block 0
-# net = MobileNetV3_block(0)
-# x = torch.randn(Blocks_shape[0])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(0))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 1
-# net = MobileNetV3_block(1)
-# x = torch.randn(Blocks_shape[1])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(1))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 2
-# net = MobileNetV3_block(2)
-# x = torch.randn(Blocks_shape[2])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(2))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 3
-# net = MobileNetV3_block(3)
-# x = torch.randn(Blocks_shape[3])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(3))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 4
-# net = MobileNetV3_block(4)
-# x = torch.randn(Blocks_shape[4])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(4))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 5
-# net = MobileNetV3_block(5)
-# x = torch.randn(Blocks_shape[5])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(5))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 6
-# net = MobileNetV3_block(6)
-# x = torch.randn(Blocks_shape[6])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(6))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 7
-# net = MobileNetV3_block(7)
-# x = torch.randn(Blocks_shape[7])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(7))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 8
-# net = MobileNetV3_block(8)
-# x = torch.randn(Blocks_shape[8])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(8))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# block 9
-net = MobileNetV3_block(9)
-x = torch.randn(Blocks_shape[9])
-
-with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(9))) as prof:
-    with record_function("model_inference"):
-        net(x)        
-
-print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
-
-# # block 10
-# net = MobileNetV3_block(10)
-# x = torch.randn(Blocks_shape[10])
-
-# with profile(activities=[ProfilerActivity.CPU], profile_memory=True, record_shapes=True,  on_trace_ready=torch.profiler.tensorboard_trace_handler('./mobilenet/log', 'block_'+str(10))) as prof:
-#     with record_function("model_inference"):
-#         net(x)        
-
-# print(prof.key_averages().table(sort_by="self_cpu_memory_usage", row_limit=-1))
+net = MobileNetV3_Small()
+print(count_activation_size(net))

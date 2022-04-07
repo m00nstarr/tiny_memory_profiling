@@ -2,10 +2,11 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import copy
-import torch
-import torch.nn as nn
 
-from utils import hswish, hsigmoid
+from ofa.utils import Hswish, Hsigmoid, MyConv2d
+from ofa.utils.layers import ResidualBlock
+from torchvision.models.resnet import BasicBlock, Bottleneck
+from torchvision.models.mobilenetv2 import InvertedResidual
 
 def model_size(net, trainable_param_bits = 32, frozen_param_bits = 8, print_log = True):
 	frozen_param_bits = 32 if frozen_param_bits is None else frozen_param_bits
@@ -95,7 +96,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 			fn = count_bn
 		elif type(m_) in [nn.ReLU, nn.ReLU6, nn.LeakyReLU]:
 			fn = count_relu
-		elif type(m_) in [nn.Sigmoid, nn.Tanh, hswish, hsigmoid]:
+		elif type(m_) in [nn.Sigmoid, nn.Tanh, Hswish, Hsigmoid]:
 			fn = count_smooth_act
 		else:
 			fn = None
@@ -152,3 +153,5 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 		model(x)
 
 	return memory_info_dict['peak_activation_size'].item(), memory_info_dict['grad_activation_size'].item()
+
+

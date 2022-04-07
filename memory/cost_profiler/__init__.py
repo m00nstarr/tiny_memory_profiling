@@ -1,2 +1,3 @@
-from .memory_cost import *
 from .utils import *
+from .memory_cost import *
+
