@@ -1,0 +1,4048 @@
+
+{
+  "schemaVersion": 1,
+  "deviceProperties": [
+    {
+      "id": 0, "name": "NVIDIA GeForce RTX 3080", "totalGlobalMem": 10504699904,
+      "computeMajor": 8, "computeMinor": 6,
+      "maxThreadsPerBlock": 1024, "maxThreadsPerMultiprocessor": 1536,
+      "regsPerBlock": 65536, "regsPerMultiprocessor": 65536, "warpSize": 32,
+      "sharedMemPerBlock": 49152, "sharedMemPerMultiprocessor": 102400,
+      "numSms": 68, "sharedMemPerBlockOptin": 101376
+    },
+    {
+      "id": 1, "name": "NVIDIA GeForce RTX 3080", "totalGlobalMem": 10504699904,
+      "computeMajor": 8, "computeMinor": 6,
+      "maxThreadsPerBlock": 1024, "maxThreadsPerMultiprocessor": 1536,
+      "regsPerBlock": 65536, "regsPerMultiprocessor": 65536, "warpSize": 32,
+      "sharedMemPerBlock": 49152, "sharedMemPerMultiprocessor": 102400,
+      "numSms": 68, "sharedMemPerBlockOptin": 101376
+    }
+  ],
+  "traceEvents": [
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546468645,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108161856, "Bytes": 4, "Total Allocated": 380, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468642, "dur": 16,
+    "args": {
+       "External id": 1918,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468667, "dur": 1,
+    "args": {
+       "External id": 1919,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zeros", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468638, "dur": 48,
+    "args": {
+       "External id": 1917,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "Bool"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546468708,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109021184, "Bytes": 16, "Total Allocated": 396, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468707, "dur": 9,
+    "args": {
+       "External id": 1921,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546468718,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109021184, "Bytes": -16, "Total Allocated": 380, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546468726,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108161856, "Bytes": -4, "Total Allocated": 376, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546468839,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106337856, "Bytes": 37632, "Total Allocated": 38008, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469056,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104088896, "Bytes": 221184, "Total Allocated": 259192, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469087,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105812032, "Bytes": 225792, "Total Allocated": 484984, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469172,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104088896, "Bytes": -221184, "Total Allocated": 263800, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469178,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106337856, "Bytes": -37632, "Total Allocated": 226168, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469194,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106037888, "Bytes": 225792, "Total Allocated": 451960, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469192, "dur": 8,
+    "args": {
+       "External id": 1926,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469250, "dur": 1,
+    "args": {
+       "External id": 1927,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469254,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105812032, "Bytes": -225792, "Total Allocated": 226168, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468803, "dur": 467,
+    "args": {
+       "External id": 1925,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [576, 96, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 232
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468796, "dur": 477,
+    "args": {
+       "External id": 1924,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [576, 96, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 232
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468791, "dur": 485,
+    "args": {
+       "External id": 1923,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [576, 96, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 232
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468788, "dur": 490,
+    "args": {
+       "External id": 1922,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [576, 96, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 232
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469305,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104608576, "Bytes": 8, "Total Allocated": 226176, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469320,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107390592, "Bytes": 8, "Total Allocated": 226184, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469315, "dur": 12,
+    "args": {
+       "External id": 1928,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["long int", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 233
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469339,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104608576, "Bytes": -8, "Total Allocated": 226176, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469390, "dur": 2,
+    "args": {
+       "External id": 1931,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469410,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104515072, "Bytes": 2304, "Total Allocated": 228480, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469422, "dur": 3,
+    "args": {
+       "External id": 1935,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469433, "dur": 2,
+    "args": {
+       "External id": 1936,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1, 576, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469419, "dur": 302,
+    "args": {
+       "External id": 1934,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], [], [576]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469726,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107800896, "Bytes": 8, "Total Allocated": 228488, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469745,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108364608, "Bytes": 4, "Total Allocated": 228492, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469743, "dur": 6,
+    "args": {
+       "External id": 1941,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469762, "dur": 4,
+    "args": {
+       "External id": 1942,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469740, "dur": 27,
+    "args": {
+       "External id": 1940,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469738, "dur": 31,
+    "args": {
+       "External id": 1939,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469773,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108364608, "Bytes": -4, "Total Allocated": 228488, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469733, "dur": 45,
+    "args": {
+       "External id": 1938,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469779,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107800896, "Bytes": -8, "Total Allocated": 228480, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469725, "dur": 58,
+    "args": {
+       "External id": 1937,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469407, "dur": 377,
+    "args": {
+       "External id": 1933,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], []], "Input type": ["float", "GenericList", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469790,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107581440, "Bytes": 2304, "Total Allocated": 230784, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469789, "dur": 6,
+    "args": {
+       "External id": 1943,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469799,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107170176, "Bytes": 2304, "Total Allocated": 233088, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469798, "dur": 5,
+    "args": {
+       "External id": 1944,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546469806,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109215232, "Bytes": 2304, "Total Allocated": 235392, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469806, "dur": 16,
+    "args": {
+       "External id": 1945,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470198,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109215232, "Bytes": -2304, "Total Allocated": 233088, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470203,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107170176, "Bytes": -2304, "Total Allocated": 230784, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470214,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106452096, "Bytes": 225792, "Total Allocated": 456576, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470212, "dur": 7,
+    "args": {
+       "External id": 1947,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470210, "dur": 10,
+    "args": {
+       "External id": 1946,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470225,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108723904, "Bytes": 2304, "Total Allocated": 458880, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470224, "dur": 5,
+    "args": {
+       "External id": 1948,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470233,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105586624, "Bytes": 2304, "Total Allocated": 461184, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470232, "dur": 5,
+    "args": {
+       "External id": 1949,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470254,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105586624, "Bytes": -2304, "Total Allocated": 458880, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470259,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108723904, "Bytes": -2304, "Total Allocated": 456576, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469397, "dur": 871,
+    "args": {
+       "External id": 1932,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 233
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469386, "dur": 885,
+    "args": {
+       "External id": 1930,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 233
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546469383, "dur": 890,
+    "args": {
+       "External id": 1929,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 233
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470291,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105536320, "Bytes": 8, "Total Allocated": 456584, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470315,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 102107200, "Bytes": 4, "Total Allocated": 456588, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470313, "dur": 7,
+    "args": {
+       "External id": 1953,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470323, "dur": 3,
+    "args": {
+       "External id": 1954,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470310, "dur": 36,
+    "args": {
+       "External id": 1952,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470308, "dur": 40,
+    "args": {
+       "External id": 1951,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470353,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106677952, "Bytes": 225792, "Total Allocated": 682380, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470393,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 102107200, "Bytes": -4, "Total Allocated": 682376, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470300, "dur": 100,
+    "args": {
+       "External id": 1950,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 234
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470404,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105536320, "Bytes": -8, "Total Allocated": 682368, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470430,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104640960, "Bytes": 225792, "Total Allocated": 908160, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470427, "dur": 8,
+    "args": {
+       "External id": 1958,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470438, "dur": 24,
+    "args": {
+       "External id": 1959,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [2, 576, 7, 7], []], "Input type": ["float", "float", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clone", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470422, "dur": 43,
+    "args": {
+       "External id": 1957,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 236
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470471, "dur": 14,
+    "args": {
+       "External id": 1960,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "Int", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::hardtanh_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470418, "dur": 69,
+    "args": {
+       "External id": 1956,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "Int", "Int"], "Fwd thread id": 0, "Sequence number": 235
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu6_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470415, "dur": 74,
+    "args": {
+       "External id": 1955,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 235
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470503,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104866880, "Bytes": 225792, "Total Allocated": 1133952, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mul", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470497, "dur": 36,
+    "args": {
+       "External id": 1961,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [2, 576, 7, 7]], "Input type": ["float", "float"], "Fwd thread id": 0, "Sequence number": 237
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470541,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107811328, "Bytes": 8, "Total Allocated": 1133960, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470563,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108741120, "Bytes": 4, "Total Allocated": 1133964, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470561, "dur": 7,
+    "args": {
+       "External id": 1965,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470571, "dur": 2,
+    "args": {
+       "External id": 1966,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470558, "dur": 16,
+    "args": {
+       "External id": 1964,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470555, "dur": 21,
+    "args": {
+       "External id": 1963,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470579,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109605248, "Bytes": 225792, "Total Allocated": 1359756, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470620,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108741120, "Bytes": -4, "Total Allocated": 1359752, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470549, "dur": 78,
+    "args": {
+       "External id": 1962,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], []], "Input type": ["float", "long int"], "Fwd thread id": 0, "Sequence number": 238
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470632,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104866880, "Bytes": -225792, "Total Allocated": 1133960, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470745,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109831104, "Bytes": 225792, "Total Allocated": 1359752, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470859,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104331200, "Bytes": 57600, "Total Allocated": 1417352, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470886,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110057024, "Bytes": 225792, "Total Allocated": 1643144, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470922,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104331200, "Bytes": -57600, "Total Allocated": 1585544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470927,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109831104, "Bytes": -225792, "Total Allocated": 1359752, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470943,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110282944, "Bytes": 225792, "Total Allocated": 1585544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470941, "dur": 8,
+    "args": {
+       "External id": 1971,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470992, "dur": 1,
+    "args": {
+       "External id": 1972,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546470996,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110057024, "Bytes": -225792, "Total Allocated": 1359752, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470707, "dur": 298,
+    "args": {
+       "External id": 1970,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576, 1, 5, 5], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 239
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470699, "dur": 310,
+    "args": {
+       "External id": 1969,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576, 1, 5, 5], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 239
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470694, "dur": 317,
+    "args": {
+       "External id": 1968,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576, 1, 5, 5], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 239
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546470690, "dur": 324,
+    "args": {
+       "External id": 1967,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576, 1, 5, 5], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 239
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471038,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107937024, "Bytes": 8, "Total Allocated": 1359760, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471053,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108251328, "Bytes": 8, "Total Allocated": 1359768, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471048, "dur": 12,
+    "args": {
+       "External id": 1973,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["long int", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 240
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471063,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107937024, "Bytes": -8, "Total Allocated": 1359760, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471106, "dur": 2,
+    "args": {
+       "External id": 1976,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471125,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109215232, "Bytes": 2304, "Total Allocated": 1362064, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471138, "dur": 2,
+    "args": {
+       "External id": 1980,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471148, "dur": 3,
+    "args": {
+       "External id": 1981,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1, 576, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471134, "dur": 40,
+    "args": {
+       "External id": 1979,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], [], [576]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471179,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108328000, "Bytes": 8, "Total Allocated": 1362072, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471199,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107827072, "Bytes": 4, "Total Allocated": 1362076, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471197, "dur": 6,
+    "args": {
+       "External id": 1986,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471207, "dur": 3,
+    "args": {
+       "External id": 1987,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471193, "dur": 19,
+    "args": {
+       "External id": 1985,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471191, "dur": 22,
+    "args": {
+       "External id": 1984,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471217,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107827072, "Bytes": -4, "Total Allocated": 1362072, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471187, "dur": 35,
+    "args": {
+       "External id": 1983,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471223,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108328000, "Bytes": -8, "Total Allocated": 1362064, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471178, "dur": 49,
+    "args": {
+       "External id": 1982,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[576], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471123, "dur": 106,
+    "args": {
+       "External id": 1978,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], []], "Input type": ["float", "GenericList", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471235,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108753856, "Bytes": 2304, "Total Allocated": 1364368, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471233, "dur": 6,
+    "args": {
+       "External id": 1988,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471244,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105613376, "Bytes": 2304, "Total Allocated": 1366672, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471243, "dur": 6,
+    "args": {
+       "External id": 1989,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471253,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105765760, "Bytes": 2304, "Total Allocated": 1368976, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471252, "dur": 5,
+    "args": {
+       "External id": 1990,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471335,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105765760, "Bytes": -2304, "Total Allocated": 1366672, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471340,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105613376, "Bytes": -2304, "Total Allocated": 1364368, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471354,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104866816, "Bytes": 225792, "Total Allocated": 1590160, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471352, "dur": 7,
+    "args": {
+       "External id": 1992,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471348, "dur": 13,
+    "args": {
+       "External id": 1991,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471366,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106406080, "Bytes": 2304, "Total Allocated": 1592464, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471365, "dur": 5,
+    "args": {
+       "External id": 1993,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471374,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108868928, "Bytes": 2304, "Total Allocated": 1594768, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471373, "dur": 5,
+    "args": {
+       "External id": 1994,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471396,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108868928, "Bytes": -2304, "Total Allocated": 1592464, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471401,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106406080, "Bytes": -2304, "Total Allocated": 1590160, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471113, "dur": 297,
+    "args": {
+       "External id": 1977,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 240
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471102, "dur": 311,
+    "args": {
+       "External id": 1975,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 240
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471099, "dur": 317,
+    "args": {
+       "External id": 1974,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [576], [576], [576], [576], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 240
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471432,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108349568, "Bytes": 8, "Total Allocated": 1590168, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471456,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109385088, "Bytes": 4, "Total Allocated": 1590172, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471454, "dur": 7,
+    "args": {
+       "External id": 1998,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471464, "dur": 3,
+    "args": {
+       "External id": 1999,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471450, "dur": 19,
+    "args": {
+       "External id": 1997,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471448, "dur": 22,
+    "args": {
+       "External id": 1996,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471474,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105092736, "Bytes": 225792, "Total Allocated": 1815964, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471513,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109385088, "Bytes": -4, "Total Allocated": 1815960, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471441, "dur": 79,
+    "args": {
+       "External id": 1995,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 241
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471523,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108349568, "Bytes": -8, "Total Allocated": 1815952, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471549,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110508864, "Bytes": 225792, "Total Allocated": 2041744, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471546, "dur": 8,
+    "args": {
+       "External id": 2003,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471557, "dur": 24,
+    "args": {
+       "External id": 2004,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [2, 576, 7, 7], []], "Input type": ["float", "float", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clone", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471541, "dur": 43,
+    "args": {
+       "External id": 2002,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 243
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471589, "dur": 15,
+    "args": {
+       "External id": 2005,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "Int", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::hardtanh_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471537, "dur": 70,
+    "args": {
+       "External id": 2001,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [], []], "Input type": ["float", "Int", "Int"], "Fwd thread id": 0, "Sequence number": 242
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu6_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471534, "dur": 74,
+    "args": {
+       "External id": 2000,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 242
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471621,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110734784, "Bytes": 225792, "Total Allocated": 2267536, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mul", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471615, "dur": 44,
+    "args": {
+       "External id": 2006,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [2, 576, 7, 7]], "Input type": ["float", "float"], "Fwd thread id": 0, "Sequence number": 244
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471666,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108777728, "Bytes": 8, "Total Allocated": 2267544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471688,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108750464, "Bytes": 4, "Total Allocated": 2267548, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471686, "dur": 6,
+    "args": {
+       "External id": 2010,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471695, "dur": 2,
+    "args": {
+       "External id": 2011,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471683, "dur": 16,
+    "args": {
+       "External id": 2009,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471680, "dur": 20,
+    "args": {
+       "External id": 2008,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471704,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110960704, "Bytes": 225792, "Total Allocated": 2493340, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471733,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108750464, "Bytes": -4, "Total Allocated": 2493336, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471674, "dur": 65,
+    "args": {
+       "External id": 2007,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], []], "Input type": ["float", "long int"], "Fwd thread id": 0, "Sequence number": 245
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471743,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110734784, "Bytes": -225792, "Total Allocated": 2267544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471828,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 111186624, "Bytes": 225792, "Total Allocated": 2493336, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546471874,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110734784, "Bytes": 221184, "Total Allocated": 2714520, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472016,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106337856, "Bytes": 37632, "Total Allocated": 2752152, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472094,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110734784, "Bytes": -221184, "Total Allocated": 2530968, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472100,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 111186624, "Bytes": -225792, "Total Allocated": 2305176, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472116,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108502016, "Bytes": 37632, "Total Allocated": 2342808, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472114, "dur": 8,
+    "args": {
+       "External id": 2016,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472154, "dur": 1,
+    "args": {
+       "External id": 2017,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472158,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106337856, "Bytes": -37632, "Total Allocated": 2305176, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471792, "dur": 375,
+    "args": {
+       "External id": 2015,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [96, 576, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 246
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471785, "dur": 384,
+    "args": {
+       "External id": 2014,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [96, 576, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 246
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471780, "dur": 392,
+    "args": {
+       "External id": 2013,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [96, 576, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 246
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546471775, "dur": 399,
+    "args": {
+       "External id": 2012,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 576, 7, 7], [96, 576, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 246
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472198,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107174208, "Bytes": 8, "Total Allocated": 2305184, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472212,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108272640, "Bytes": 8, "Total Allocated": 2305192, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472207, "dur": 12,
+    "args": {
+       "External id": 2018,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["long int", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 247
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472221,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107174208, "Bytes": -8, "Total Allocated": 2305184, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472264, "dur": 2,
+    "args": {
+       "External id": 2021,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472283,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105500416, "Bytes": 384, "Total Allocated": 2305568, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472296, "dur": 2,
+    "args": {
+       "External id": 2025,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472306, "dur": 2,
+    "args": {
+       "External id": 2026,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1, 96, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472292, "dur": 30,
+    "args": {
+       "External id": 2024,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], [], [96]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472326,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109244352, "Bytes": 8, "Total Allocated": 2305576, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472346,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108665856, "Bytes": 4, "Total Allocated": 2305580, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472344, "dur": 6,
+    "args": {
+       "External id": 2031,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472353, "dur": 4,
+    "args": {
+       "External id": 2032,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472341, "dur": 17,
+    "args": {
+       "External id": 2030,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472338, "dur": 22,
+    "args": {
+       "External id": 2029,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472363,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108665856, "Bytes": -4, "Total Allocated": 2305576, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472334, "dur": 33,
+    "args": {
+       "External id": 2028,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472369,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109244352, "Bytes": -8, "Total Allocated": 2305568, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472325, "dur": 48,
+    "args": {
+       "External id": 2027,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472281, "dur": 93,
+    "args": {
+       "External id": 2023,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], []], "Input type": ["float", "GenericList", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472379,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 103962368, "Bytes": 384, "Total Allocated": 2305952, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472378, "dur": 6,
+    "args": {
+       "External id": 2033,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472388,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105773504, "Bytes": 384, "Total Allocated": 2306336, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472387, "dur": 5,
+    "args": {
+       "External id": 2034,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472396,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108610432, "Bytes": 384, "Total Allocated": 2306720, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472395, "dur": 5,
+    "args": {
+       "External id": 2035,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472426,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108610432, "Bytes": -384, "Total Allocated": 2306336, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472431,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105773504, "Bytes": -384, "Total Allocated": 2305952, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472444,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106977600, "Bytes": 37632, "Total Allocated": 2343584, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472442, "dur": 7,
+    "args": {
+       "External id": 2037,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472439, "dur": 12,
+    "args": {
+       "External id": 2036,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472455,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105781760, "Bytes": 384, "Total Allocated": 2343968, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472455, "dur": 5,
+    "args": {
+       "External id": 2038,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472463,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105761088, "Bytes": 384, "Total Allocated": 2344352, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472462, "dur": 5,
+    "args": {
+       "External id": 2039,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472478,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105761088, "Bytes": -384, "Total Allocated": 2343968, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472483,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105781760, "Bytes": -384, "Total Allocated": 2343584, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472271, "dur": 220,
+    "args": {
+       "External id": 2022,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [96], [96], [96], [96], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 247
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472261, "dur": 233,
+    "args": {
+       "External id": 2020,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [96], [96], [96], [96], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 247
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472257, "dur": 239,
+    "args": {
+       "External id": 2019,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [96], [96], [96], [96], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 247
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472540,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106312000, "Bytes": 768, "Total Allocated": 2344352, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472556, "dur": 3,
+    "args": {
+       "External id": 2043,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472550, "dur": 19,
+    "args": {
+       "External id": 2042,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], [], [2, 96, 1, 1]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472573,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105755712, "Bytes": 8, "Total Allocated": 2344360, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472606,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108714048, "Bytes": 4, "Total Allocated": 2344364, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472604, "dur": 7,
+    "args": {
+       "External id": 2048,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472614, "dur": 4,
+    "args": {
+       "External id": 2049,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472600, "dur": 19,
+    "args": {
+       "External id": 2047,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472596, "dur": 24,
+    "args": {
+       "External id": 2046,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472624,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108714048, "Bytes": -4, "Total Allocated": 2344360, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472580, "dur": 49,
+    "args": {
+       "External id": 2045,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472630,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105755712, "Bytes": -8, "Total Allocated": 2344352, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472572, "dur": 62,
+    "args": {
+       "External id": 2044,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472535, "dur": 102,
+    "args": {
+       "External id": 2041,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [], [], []], "Input type": ["float", "GenericList", "Bool", ""], "Fwd thread id": 0, "Sequence number": 248
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::adaptive_avg_pool2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472532, "dur": 107,
+    "args": {
+       "External id": 2040,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], []], "Input type": ["float", "GenericList"], "Fwd thread id": 0, "Sequence number": 248
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472726,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108058624, "Bytes": 768, "Total Allocated": 2345120, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472755,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106263808, "Bytes": 9216, "Total Allocated": 2354336, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472779,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108964928, "Bytes": 192, "Total Allocated": 2354528, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472800,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106263808, "Bytes": -9216, "Total Allocated": 2345312, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472805,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108058624, "Bytes": -768, "Total Allocated": 2344544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472818,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108329472, "Bytes": 192, "Total Allocated": 2344736, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472817, "dur": 6,
+    "args": {
+       "External id": 2054,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472844, "dur": 2,
+    "args": {
+       "External id": 2055,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472848,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108964928, "Bytes": -192, "Total Allocated": 2344544, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472693, "dur": 163,
+    "args": {
+       "External id": 2053,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [24, 96, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 249
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472685, "dur": 174,
+    "args": {
+       "External id": 2052,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [24, 96, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 249
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472680, "dur": 181,
+    "args": {
+       "External id": 2051,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [24, 96, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 249
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472676, "dur": 187,
+    "args": {
+       "External id": 2050,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [24, 96, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 249
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472887,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105505984, "Bytes": 8, "Total Allocated": 2344552, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472901,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109017024, "Bytes": 8, "Total Allocated": 2344560, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546472897, "dur": 11,
+    "args": {
+       "External id": 2056,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["long int", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 250
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546472910,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105505984, "Bytes": -8, "Total Allocated": 2344552, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473021, "dur": 2,
+    "args": {
+       "External id": 2059,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473040,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107540672, "Bytes": 96, "Total Allocated": 2344648, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473053, "dur": 2,
+    "args": {
+       "External id": 2063,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[24], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473063, "dur": 3,
+    "args": {
+       "External id": 2064,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1, 24, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473049, "dur": 19,
+    "args": {
+       "External id": 2062,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [], [], [], [24]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473073,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108742528, "Bytes": 8, "Total Allocated": 2344656, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473091,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108039552, "Bytes": 4, "Total Allocated": 2344660, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473090, "dur": 6,
+    "args": {
+       "External id": 2069,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473099, "dur": 3,
+    "args": {
+       "External id": 2070,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473086, "dur": 18,
+    "args": {
+       "External id": 2068,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473084, "dur": 21,
+    "args": {
+       "External id": 2067,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473109,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108039552, "Bytes": -4, "Total Allocated": 2344656, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473080, "dur": 33,
+    "args": {
+       "External id": 2066,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[24], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473115,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108742528, "Bytes": -8, "Total Allocated": 2344648, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473072, "dur": 47,
+    "args": {
+       "External id": 2065,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[24], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473037, "dur": 83,
+    "args": {
+       "External id": 2061,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [], [], []], "Input type": ["float", "GenericList", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473125,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105393280, "Bytes": 96, "Total Allocated": 2344744, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473124, "dur": 5,
+    "args": {
+       "External id": 2071,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473133,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105534208, "Bytes": 96, "Total Allocated": 2344840, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473133, "dur": 5,
+    "args": {
+       "External id": 2072,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473141,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105736960, "Bytes": 96, "Total Allocated": 2344936, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473141, "dur": 5,
+    "args": {
+       "External id": 2073,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473151,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106410752, "Bytes": 1920, "Total Allocated": 2346856, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473150, "dur": 6,
+    "args": {
+       "External id": 2074,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473159, "dur": 1,
+    "args": {
+       "External id": 2075,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[20, 24]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473907, "dur": 1,
+    "args": {
+       "External id": 2076,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[20, 24]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473926,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106410752, "Bytes": -1920, "Total Allocated": 2344936, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473939,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105736960, "Bytes": -96, "Total Allocated": 2344840, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473944,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105534208, "Bytes": -96, "Total Allocated": 2344744, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473955,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107568512, "Bytes": 192, "Total Allocated": 2344936, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473954, "dur": 5,
+    "args": {
+       "External id": 2078,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473951, "dur": 10,
+    "args": {
+       "External id": 2077,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473965,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105539840, "Bytes": 96, "Total Allocated": 2345032, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473965, "dur": 5,
+    "args": {
+       "External id": 2079,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473973,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105734336, "Bytes": 96, "Total Allocated": 2345128, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473973, "dur": 4,
+    "args": {
+       "External id": 2080,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473988,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105734336, "Bytes": -96, "Total Allocated": 2345032, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546473992,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105539840, "Bytes": -96, "Total Allocated": 2344936, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473028, "dur": 973,
+    "args": {
+       "External id": 2060,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [24], [24], [24], [24], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 250
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473017, "dur": 986,
+    "args": {
+       "External id": 2058,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [24], [24], [24], [24], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 250
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546473013, "dur": 993,
+    "args": {
+       "External id": 2057,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [24], [24], [24], [24], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 250
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474032, "dur": 4,
+    "args": {
+       "External id": 2083,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [], [2, 24, 1, 1]], "Input type": ["float", "Int", "float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_min_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474030, "dur": 8,
+    "args": {
+       "External id": 2082,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474025, "dur": 18,
+    "args": {
+       "External id": 2081,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 251
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474113,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108852288, "Bytes": 192, "Total Allocated": 2345128, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474142,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106273152, "Bytes": 9216, "Total Allocated": 2354344, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474167,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105529984, "Bytes": 768, "Total Allocated": 2355112, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474189,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106273152, "Bytes": -9216, "Total Allocated": 2345896, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474194,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108852288, "Bytes": -192, "Total Allocated": 2345704, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474208,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108058624, "Bytes": 768, "Total Allocated": 2346472, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474206, "dur": 7,
+    "args": {
+       "External id": 2088,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474234, "dur": 1,
+    "args": {
+       "External id": 2089,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474238,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105529984, "Bytes": -768, "Total Allocated": 2345704, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mkldnn_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474082, "dur": 164,
+    "args": {
+       "External id": 2087,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [96, 24, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 252
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474074, "dur": 175,
+    "args": {
+       "External id": 2086,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [96, 24, 1, 1], [], [], [], [], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int", "Bool", "Bool", "Bool", "Bool"], "Fwd thread id": 0, "Sequence number": 252
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::convolution", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474070, "dur": 181,
+    "args": {
+       "External id": 2085,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [96, 24, 1, 1], [], [], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Bool", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 252
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::conv2d", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474065, "dur": 188,
+    "args": {
+       "External id": 2084,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 24, 1, 1], [96, 24, 1, 1], [], [], [], [], []], "Input type": ["float", "float", "", "GenericList", "GenericList", "GenericList", "Int"], "Fwd thread id": 0, "Sequence number": 252
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474278,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107243392, "Bytes": 8, "Total Allocated": 2345712, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474292,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109442048, "Bytes": 8, "Total Allocated": 2345720, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474287, "dur": 12,
+    "args": {
+       "External id": 2090,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["long int", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 253
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474301,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107243392, "Bytes": -8, "Total Allocated": 2345712, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474345, "dur": 1,
+    "args": {
+       "External id": 2093,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474364,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105535232, "Bytes": 384, "Total Allocated": 2346096, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::as_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474377, "dur": 2,
+    "args": {
+       "External id": 2097,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], [], [], []], "Input type": ["float", "GenericList", "GenericList", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::fill_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474387, "dur": 2,
+    "args": {
+       "External id": 2098,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[1, 96, 1, 1], []], "Input type": ["float", "Double"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::sum", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474372, "dur": 20,
+    "args": {
+       "External id": 2096,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], [], [], [96]], "Input type": ["float", "GenericList", "Bool", "Int", "float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474397,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105545024, "Bytes": 8, "Total Allocated": 2346104, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474415,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108711296, "Bytes": 4, "Total Allocated": 2346108, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474413, "dur": 6,
+    "args": {
+       "External id": 2103,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474423, "dur": 3,
+    "args": {
+       "External id": 2104,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474410, "dur": 17,
+    "args": {
+       "External id": 2102,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474408, "dur": 21,
+    "args": {
+       "External id": 2101,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474432,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108711296, "Bytes": -4, "Total Allocated": 2346104, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474403, "dur": 34,
+    "args": {
+       "External id": 2100,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], []], "Input type": ["float", "long int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474438,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105545024, "Bytes": -8, "Total Allocated": 2346096, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474395, "dur": 47,
+    "args": {
+       "External id": 2099,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[96], []], "Input type": ["float", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mean", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474361, "dur": 83,
+    "args": {
+       "External id": 2095,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], [], []], "Input type": ["float", "GenericList", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474448,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108285248, "Bytes": 384, "Total Allocated": 2346480, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474447, "dur": 6,
+    "args": {
+       "External id": 2105,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474457,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107570496, "Bytes": 384, "Total Allocated": 2346864, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474456, "dur": 5,
+    "args": {
+       "External id": 2106,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474464,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108167616, "Bytes": 384, "Total Allocated": 2347248, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474464, "dur": 5,
+    "args": {
+       "External id": 2107,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474474,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106282496, "Bytes": 7680, "Total Allocated": 2354928, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474472, "dur": 7,
+    "args": {
+       "External id": 2108,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474481, "dur": 1,
+    "args": {
+       "External id": 2109,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[20, 96]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::zero_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474504, "dur": 1,
+    "args": {
+       "External id": 2110,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[20, 96]], "Input type": ["float"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474527,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106282496, "Bytes": -7680, "Total Allocated": 2347248, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474542,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108167616, "Bytes": -384, "Total Allocated": 2346864, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474546,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107570496, "Bytes": -384, "Total Allocated": 2346480, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474558,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105529984, "Bytes": 768, "Total Allocated": 2347248, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474557, "dur": 6,
+    "args": {
+       "External id": 2112,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_like", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474554, "dur": 11,
+    "args": {
+       "External id": 2111,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], [], [], [], []], "Input type": ["float", "", "", "", "", "Int"]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474569,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106451072, "Bytes": 384, "Total Allocated": 2347632, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474568, "dur": 5,
+    "args": {
+       "External id": 2113,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474577,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108353600, "Bytes": 384, "Total Allocated": 2348016, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474576, "dur": 5,
+    "args": {
+       "External id": 2114,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "Int", "Int", "", "", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474591,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108353600, "Bytes": -384, "Total Allocated": 2347632, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474596,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106451072, "Bytes": -384, "Total Allocated": 2347248, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::native_batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474351, "dur": 253,
+    "args": {
+       "External id": 2094,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [96], [96], [96], [96], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double"], "Fwd thread id": 0, "Sequence number": 253
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_batch_norm_impl_index", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474341, "dur": 266,
+    "args": {
+       "External id": 2092,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [96], [96], [96], [96], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 253
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::batch_norm", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474337, "dur": 272,
+    "args": {
+       "External id": 2091,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [96], [96], [96], [96], [], [], [], []], "Input type": ["float", "float", "float", "float", "float", "Bool", "Double", "Double", "Bool"], "Fwd thread id": 0, "Sequence number": 253
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474626,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108115648, "Bytes": 8, "Total Allocated": 2347256, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474649,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106448192, "Bytes": 4, "Total Allocated": 2347260, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474647, "dur": 6,
+    "args": {
+       "External id": 2118,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474656, "dur": 4,
+    "args": {
+       "External id": 2119,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474644, "dur": 17,
+    "args": {
+       "External id": 2117,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474642, "dur": 20,
+    "args": {
+       "External id": 2116,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474666,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106409664, "Bytes": 768, "Total Allocated": 2348028, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474672,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106448192, "Bytes": -4, "Total Allocated": 2348024, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474634, "dur": 44,
+    "args": {
+       "External id": 2115,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], []], "Input type": ["float", "long int", "Int"], "Fwd thread id": 0, "Sequence number": 254
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474680,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108115648, "Bytes": -8, "Total Allocated": 2348016, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474704,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107723712, "Bytes": 768, "Total Allocated": 2348784, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474702, "dur": 7,
+    "args": {
+       "External id": 2123,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474712, "dur": 3,
+    "args": {
+       "External id": 2124,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [2, 96, 1, 1], []], "Input type": ["float", "float", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clone", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474697, "dur": 21,
+    "args": {
+       "External id": 2122,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], []], "Input type": ["float", ""], "Fwd thread id": 0, "Sequence number": 256
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::clamp_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474722, "dur": 3,
+    "args": {
+       "External id": 2125,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], []], "Input type": ["float", "Int", "Int"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::hardtanh_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474693, "dur": 34,
+    "args": {
+       "External id": 2121,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], [], []], "Input type": ["float", "Int", "Int"], "Fwd thread id": 0, "Sequence number": 255
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::relu6_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474690, "dur": 39,
+    "args": {
+       "External id": 2120,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1]], "Input type": ["float"], "Fwd thread id": 0, "Sequence number": 255
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474735,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106375616, "Bytes": 8, "Total Allocated": 2348792, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474755,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107237376, "Bytes": 4, "Total Allocated": 2348796, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::empty_strided", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474754, "dur": 5,
+    "args": {
+       "External id": 2129,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], []], "Input type": ["GenericList", "GenericList", "Int", "Int", "", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::copy_", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474762, "dur": 2,
+    "args": {
+       "External id": 2130,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], []], "Input type": ["float", "long int", "Bool"]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::_to_copy", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474751, "dur": 14,
+    "args": {
+       "External id": 2128,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], [], [], []], "Input type": ["long int", "Int", "", "", "", "Bool", ""]
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::to", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474749, "dur": 18,
+    "args": {
+       "External id": 2127,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[], [], [], [], []], "Input type": ["long int", "Int", "Bool", "Bool", ""]
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474770,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108708032, "Bytes": 768, "Total Allocated": 2349564, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474775,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107237376, "Bytes": -4, "Total Allocated": 2349560, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::div", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474742, "dur": 39,
+    "args": {
+       "External id": 2126,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 1, 1], []], "Input type": ["float", "long int"], "Fwd thread id": 0, "Sequence number": 257
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474784,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106409664, "Bytes": -768, "Total Allocated": 2348792, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474791,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105529984, "Bytes": -768, "Total Allocated": 2348024, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474807,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106903872, "Bytes": 37632, "Total Allocated": 2385656, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::mul", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474800, "dur": 23,
+    "args": {
+       "External id": 2131,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [2, 96, 1, 1]], "Input type": ["float", "float"], "Fwd thread id": 0, "Sequence number": 258
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474850,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110204544, "Bytes": 37632, "Total Allocated": 2423288, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "aten::add", "pid": 4024, "tid": 4024,
+    "ts": 1649156546474845, "dur": 20,
+    "args": {
+       "External id": 2132,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0,
+       "Input Dims": [[2, 96, 7, 7], [2, 96, 7, 7], []], "Input type": ["float", "float", "Int"], "Fwd thread id": 0, "Sequence number": 259
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474869,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106903872, "Bytes": -37632, "Total Allocated": 2385656, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474877,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106977600, "Bytes": -37632, "Total Allocated": 2348024, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474883,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108708032, "Bytes": -768, "Total Allocated": 2347256, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474888,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106375616, "Bytes": -8, "Total Allocated": 2347248, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474894,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107723712, "Bytes": -768, "Total Allocated": 2346480, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474899,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108058624, "Bytes": -768, "Total Allocated": 2345712, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474903,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105535232, "Bytes": -384, "Total Allocated": 2345328, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474908,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108285248, "Bytes": -384, "Total Allocated": 2344944, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474915,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107568512, "Bytes": -192, "Total Allocated": 2344752, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474920,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108329472, "Bytes": -192, "Total Allocated": 2344560, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474925,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107540672, "Bytes": -96, "Total Allocated": 2344464, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474929,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105393280, "Bytes": -96, "Total Allocated": 2344368, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474934,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106312000, "Bytes": -768, "Total Allocated": 2343600, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474940,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108502016, "Bytes": -37632, "Total Allocated": 2305968, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474945,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105500416, "Bytes": -384, "Total Allocated": 2305584, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474949,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 103962368, "Bytes": -384, "Total Allocated": 2305200, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474954,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110960704, "Bytes": -225792, "Total Allocated": 2079408, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474960,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108777728, "Bytes": -8, "Total Allocated": 2079400, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474966,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104866816, "Bytes": -225792, "Total Allocated": 1853608, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474971,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 105092736, "Bytes": -225792, "Total Allocated": 1627816, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474977,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110508864, "Bytes": -225792, "Total Allocated": 1402024, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474982,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110282944, "Bytes": -225792, "Total Allocated": 1176232, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474987,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109215232, "Bytes": -2304, "Total Allocated": 1173928, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474991,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 108753856, "Bytes": -2304, "Total Allocated": 1171624, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546474996,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 109605248, "Bytes": -225792, "Total Allocated": 945832, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475002,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107811328, "Bytes": -8, "Total Allocated": 945824, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475007,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106452096, "Bytes": -225792, "Total Allocated": 720032, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475012,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106677952, "Bytes": -225792, "Total Allocated": 494240, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475017,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104640960, "Bytes": -225792, "Total Allocated": 268448, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475022,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 106037888, "Bytes": -225792, "Total Allocated": 42656, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475027,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 104515072, "Bytes": -2304, "Total Allocated": 40352, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475031,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 107581440, "Bytes": -2304, "Total Allocated": 38048, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "i", "s": "t", "name": "[memory]",
+    "pid": 4024, "tid": 4024,
+    "ts": 1649156546475036,
+    "args": {
+      "Device Type": 0, "Device Id": -1, "Addr": 110204544, "Bytes": -37632, "Total Allocated": 416, "Total Reserved": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", 
+    "name": "model_inference", "pid": 4024, "tid": 4024,
+    "ts": 1649156546468704, "dur": 6347,
+    "args": {
+       "External id": 1920,
+       "Trace name": "PyTorch Profiler", "Trace iteration": 0
+       
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 4024, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 4024, "tid": 0,
+    "args": {
+      "labels": "CPU"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 4024, "tid": 0,
+    "args": {
+      "sort_index": 4024
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 0, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 0, "tid": 0,
+    "args": {
+      "labels": "GPU 0"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 0, "tid": 0,
+    "args": {
+      "sort_index": 16777216
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 1, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 1, "tid": 0,
+    "args": {
+      "labels": "GPU 1"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 1, "tid": 0,
+    "args": {
+      "sort_index": 16777217
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 2, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 2, "tid": 0,
+    "args": {
+      "labels": "GPU 2"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 2, "tid": 0,
+    "args": {
+      "sort_index": 16777218
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 3, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 3, "tid": 0,
+    "args": {
+      "labels": "GPU 3"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 3, "tid": 0,
+    "args": {
+      "sort_index": 16777219
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 4, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 4, "tid": 0,
+    "args": {
+      "labels": "GPU 4"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 4, "tid": 0,
+    "args": {
+      "sort_index": 16777220
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 5, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 5, "tid": 0,
+    "args": {
+      "labels": "GPU 5"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 5, "tid": 0,
+    "args": {
+      "sort_index": 16777221
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 6, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 6, "tid": 0,
+    "args": {
+      "labels": "GPU 6"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 6, "tid": 0,
+    "args": {
+      "sort_index": 16777222
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 1649156546468260, "pid": 7, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 1649156546468260, "pid": 7, "tid": 0,
+    "args": {
+      "labels": "GPU 7"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 7, "tid": 0,
+    "args": {
+      "sort_index": 16777223
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 1649156546468260, "pid": 4024, "tid": 4024,
+    "args": {
+      "name": "thread 4024 (python)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 1649156546468260, "pid": 4024, "tid": 4024,
+    "args": {
+      "sort_index": 4024
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 1649156546468260, "dur": 6803,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 1649156546468260,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 1649156546476036
+  }
+]}
