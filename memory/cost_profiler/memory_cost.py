@@ -1,12 +1,14 @@
+import copy
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import copy
 
 from ofa.utils import Hswish, Hsigmoid, MyConv2d
 from ofa.utils.layers import ResidualBlock
 from torchvision.models.resnet import BasicBlock, Bottleneck
 from torchvision.models.mobilenetv2 import InvertedResidual
+
+
 
 def model_size(net, trainable_param_bits = 32, frozen_param_bits = 8, print_log = True):
 	frozen_param_bits = 32 if frozen_param_bits is None else frozen_param_bits
@@ -32,7 +34,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 	model = copy.deepcopy(net)
 
 	# noinspection PyArgumentList
-	def count_convNd(m, x, y):
+	def count_convNd(m, x, y):			
 		# count activation size required by backward
 		if m.weight is not None and m.weight.requires_grad:
 			m.grad_activations = torch.Tensor([x[0].numel() * act_byte])  # bytes
@@ -88,7 +90,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 		m_.register_buffer('grad_activations', torch.zeros(1))
 		m_.register_buffer('tmp_activations', torch.zeros(1))
 
-		if type(m_) in [nn.Conv1d, nn.Conv2d, nn.Conv3d]:
+		if type(m_) in [nn.Conv1d, nn.Conv2d, nn.Conv3d, MyConv2d]:
 			fn = count_convNd
 		elif type(m_) in [nn.Linear]:
 			fn = count_linear
@@ -96,7 +98,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 			fn = count_bn
 		elif type(m_) in [nn.ReLU, nn.ReLU6, nn.LeakyReLU]:
 			fn = count_relu
-		elif type(m_) in [nn.Sigmoid, nn.Tanh, Hswish, Hsigmoid]:
+		elif type(m_) in [nn.Sigmoid, nn.Tanh, hswish, hsigmoid]:
 			fn = count_smooth_act
 		else:
 			fn = None
@@ -109,6 +111,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 
 	x = torch.zeros(input_size).to(model.parameters().__next__().device)
 	with torch.no_grad():
+		print(x.shape)
 		model(x)
 
 	memory_info_dict = {
@@ -153,5 +156,3 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 		model(x)
 
 	return memory_info_dict['peak_activation_size'].item(), memory_info_dict['grad_activation_size'].item()
-
-
