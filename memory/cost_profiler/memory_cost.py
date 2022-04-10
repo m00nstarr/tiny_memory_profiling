@@ -98,7 +98,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 			fn = count_bn
 		elif type(m_) in [nn.ReLU, nn.ReLU6, nn.LeakyReLU]:
 			fn = count_relu
-		elif type(m_) in [nn.Sigmoid, nn.Tanh, hswish, hsigmoid]:
+		elif type(m_) in [nn.Sigmoid, nn.Tanh, Hswish, Hsigmoid]:
 			fn = count_smooth_act
 		else:
 			fn = None
