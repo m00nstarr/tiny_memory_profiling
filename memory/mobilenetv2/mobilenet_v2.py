@@ -48,7 +48,7 @@ class ConvBNReLU(nn.Sequential):
 
 
 class InvertedResidual(nn.Module):
-    def __init__(self, inp, oup, stride, expand_ratio, norm_layer=None):
+    def __init__(self, inp, oup, stride, expand_ratio, norm_layer=None, quantized = False):
         super(InvertedResidual, self).__init__()
         self.stride = stride
         assert stride in [1, 2]
@@ -211,10 +211,23 @@ inp_size = [
     160
 ]
 
+input_resolution = [
+    (1, 32, 112, 112),
+    (1, 16, 112, 112),
+    (1, 24, 56, 56),
+    (1, 32, 28, 28),
+    (1, 64, 14, 14),
+    (1, 96, 14, 14),
+    (1, 160, 7, 7)
+]
+
 for idx, item in enumerate(inverted_residual_setting):
     t, c, n ,s = item
+    #width-multiplier = 1 사용
     output_channel = _make_divisible(c,8)
-    net = InvertedResidual(inp_size[idx], output_channel, stride = s, expand_ratio=t, norm_layer=nn.BatchNorm2d)
+    input_channel = 32 if idx == 0 else input_channel
+    net = InvertedResidual(input_channel, output_channel, stride = s, expand_ratio=t, norm_layer=nn.BatchNorm2d)
     input_channel = output_channel
     print(net)
-    #print(f'{idx} : {count_activation_size(net)}')
+    activation_memory = count_activation_size(net, input_size = input_resolution[idx])
+    print(f'blk_idx : {idx} / activation_size = {activation_memory[0] / 1048576.0 : .2f}Mb ')
