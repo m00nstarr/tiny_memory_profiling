@@ -7,6 +7,7 @@
 - [x]  activation memory constraint 기준 설정 ( SRAM 512KB )
 - [ ]  액티베이션 사이즈가 큰 순서대로 quantization 시도
 - [ ]  pruning 시도
+- [ ]  mobilenet 하이퍼 파라미터 α(입력/출력 채널 개수 조절), ρ(입력 이미지 해상도) 값 줄이기
 
 
 ## 2. MobileNetV2 Inverted Residual Block Memory Profiling
