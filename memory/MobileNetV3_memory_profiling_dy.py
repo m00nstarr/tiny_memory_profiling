@@ -180,3 +180,9 @@ class MobileNetV3_Small(nn.Module):
 for blk_idx in range(len(Blocks)):
     net = MobileNetV3_block(blk_idx)
     print(f'{blk_idx} : {count_activation_size(net, input_size = Blocks_shape[blk_idx])}')
+
+s = 1000
+stride = -1
+for i in range(100):
+    stride = s if i == 0 else 1
+    print(stride)
