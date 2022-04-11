@@ -7,8 +7,11 @@
 - [x]  activation memory constraint 기준 설정 ( SRAM 512KB = 0.5MB )
 
 ## 1-1. 세부 계획  
-NAS의 search space 설정  
+1. NAS의 search space 설정  
 ( **depth** x **width multiplier** x **bitwidth** )  
+
+2. Quantization은 pytorch API 사용 보다는 직접 구현할 계획  
+
 
 
 ## 2. MobileNetV2 Inverted Residual Block Memory Profiling
