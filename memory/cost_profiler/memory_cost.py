@@ -48,7 +48,7 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 		# count activation size required by backward
 		if m.weight is not None and m.weight.requires_grad:
 			m.grad_activations = torch.Tensor([x[0].numel() * act_byte])  # bytes
-		else:
+		else:	
 			m.grad_activations = torch.Tensor([0])
 		# temporary memory footprint required by inference
 		m.tmp_activations = torch.Tensor([x[0].numel() * act_byte + y.numel() * act_byte])  # bytes
@@ -111,7 +111,6 @@ def count_activation_size(net, input_size=(1, 3, 224, 224), require_backward=Tru
 
 	x = torch.zeros(input_size).to(model.parameters().__next__().device)
 	with torch.no_grad():
-		print(x.shape)
 		model(x)
 
 	memory_info_dict = {
